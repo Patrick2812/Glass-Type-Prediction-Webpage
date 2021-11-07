@@ -1,0 +1,144 @@
+<!Doctype html>
+<html lang="en" dir="itr" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="favicon.jpg.ico" type="image/x-icon" />
+    <title></title>
+    
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-shadow:1px 1px rgb(109, 221, 224);
+    /* position: absolute; */
+}
+.hero h1{
+    font-size: 3rem;
+}
+.inner-hero{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 5rem;
+    /* border: 15px solid rgb(109, 221, 224); */
+    /* box-shadow: 0px 10px rgb(0, 0, 0); */
+
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+}
+label{
+    display:flex;
+    justify-content: flex-end;
+    /* font-size: 1.5rem; */
+    color: rgb(109, 221, 224);
+    text-shadow: 1px 1px black;
+    font-size: 2rem;
+}
+input{
+    margin: 5px;
+    font-size: 1.4rem;
+    display: flex;
+    position: relative;
+    /* width: 100%; */
+    background: transparent;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: flex-start;
+    outline: 0;
+    box-shadow: 5px 5px black;
+    border: none;
+    border: 1px solid black;
+    right: 0rem;
+}
+input:hover{
+    background-color: blanchedalmond;
+}
+.sumb{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 6rem;
+    left: 0rem;
+    
+    
+}
+.btn{
+    background-color:rgb(109, 221, 224); 
+    padding: 7px;
+    margin: 0px 15px;
+    transition: all ease-in-out 1s;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: black;
+    color: rgb(109, 221, 224);
+    box-shadow: 5px 5px rgb(224, 109, 109); 
+    
+}
+</style>
+<body>
+    
+    <div class="hero">
+        <h1>
+            This is my homepage
+        </h1>   
+    </div>
+
+
+
+
+    <form class="form-input" action="{% url 'result' %}">
+        <div class="hero">
+        </div>
+        <div class="inner-hero">
+            <div class="items">
+                <label for="RI">Ri:</label>
+                <input class="data" type="text" required name="RI">
+                <label for="RI">Na:</label>
+                <input class="data" type="text" required name="Na">
+                <label for="RI">Mg:</label>
+                <input class="data" type="text" required name="Mg">
+                <label for="RI">Al:</label>
+                <input class="data" type="text" required name="Al">
+                <label for="RI">Si:</label>
+                <input class="data" type="text" required name="Si">
+                <label for="RI">K:</label>
+                <input class="data" type="text" required name="K">
+                <label for="RI">Ca:</label>
+                <input class="data" type="text" required name="Ca">
+                <label for="RI">Ba:</label>
+                <input class="data" type="text" required name="Ba">
+                <label for="RI">Fe:</label>
+                <input class="data" type="text" required name="Fe">
+            </div>
+            <div class="sumb">
+                <input class="btn" type="submit" name="" value="Submit">
+            </div>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

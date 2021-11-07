@@ -1,0 +1,82 @@
+<!Doctype html>
+<html lang="en" dir="itr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="favicon.jpg.ico" type="image/x-icon" />
+        <title></title>
+    </head>
+    <style>
+        .hero-a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 2rem;
+    text-shadow:1px 1px rgb(109, 221, 224);
+    margin-top: 1rem;
+}
+.line{
+    width: 95%;
+    color: aqua;
+    max-width: 1250px;
+    margin: auto;
+}
+pre{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+.link{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4rem;
+    margin-top: 1rem;
+}
+.line-2{
+    width: 95%;
+    margin-top: 1rem;
+    color: rgb(87, 94, 94);
+    max-width: 1250px;
+    margin: auto;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-shadow:1px 1px rgb(109, 221, 224);
+    /* position: absolute; */
+}
+    </style>
+    <body>
+        <div class="container">
+
+            <h1 class="hero">The Result are here </h1>
+            <hr class="line">
+            
+            <h3 class="hero-a">The data you entered is :{{lis}}</h3>
+            
+            <h3 class="hero" style="margin-bottom: 2rem;">Te Category of the Glass is :{{ans}}</h3>
+            <hr class="line">
+            <br>
+            <hr class="line-2">
+            
+            <pre>
+                Type of glass: (class attribute)
+                -- 1 building_windows_float_processed
+                -- 2 building_windows_non_float_processed
+                -- 3 vehicle_windows_float_processed
+                -- 4 vehicle_windows_non_float_processed (none in this database)
+                -- 5 containers
+                -- 6 tableware
+                -- 7 headlamps
+            </pre>
+            <hr class="line-2">
+            
+            <a class="link" href="{% url 'home' %}">Click Here to go to home page</a>
+        </div>
+
+
+    </body>
+</html>
